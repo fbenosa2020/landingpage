@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Data Sample</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .bio-container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #3498db;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 25px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(52, 152, 219, 0.2);
+        }
+        .back-btn:hover {
+            background: rgba(52, 152, 219, 0.2);
+            transform: translateX(-3px);
+            color: #2980b9;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #3498db;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+        .name {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #bdc3c7;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .info-item {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .label {
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 3px;
+        }
+        .value {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="bio-container">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+        <div class="header">
+            <div class="profile-img">👤</div>
+            <h2 class="name">John Smith</h2>
+            <p><strong>Senior Software Developer</strong></p>
+            <p>TechCorp Solutions</p>
+        </div>
+
+        <div class="section">
+            <h3>Personal Information</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="label">Date of Birth:</div>
+                    <div class="value">January 15, 1990</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Gender:</div>
+                    <div class="value">Male</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Nationality:</div>
+                    <div class="value">American</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Marital Status:</div>
+                    <div class="value">Single</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Contact Information</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="label">Email:</div>
+                    <div class="value">john.smith@email.com</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Phone:</div>
+                    <div class="value">+1 (555) 123-4567</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Address:</div>
+                    <div class="value">123 Tech Street, Silicon Valley</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">City:</div>
+                    <div class="value">San Francisco, CA</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Educational Background</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="label">Highest Education:</div>
+                    <div class="value">Master's Degree</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Institution:</div>
+                    <div class="value">Stanford University</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Field of Study:</div>
+                    <div class="value">Computer Science</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Graduation Year:</div>
+                    <div class="value">2015</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Professional Information</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="label">Current Job Title:</div>
+                    <div class="value">Senior Software Developer</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Company:</div>
+                    <div class="value">TechCorp Solutions</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Years of Experience:</div>
+                    <div class="value">8 years</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Skills:</div>
+                    <div class="value">JavaScript, Python, React, Node.js, AWS, Docker</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Additional Information</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="label">Languages:</div>
+                    <div class="value">English (Native), Spanish (Intermediate)</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Hobbies & Interests:</div>
+                    <div class="value">Photography, Hiking, Open Source Contributions</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
